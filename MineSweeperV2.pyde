@@ -60,7 +60,7 @@ class Hexagon(Cell):
         return self.hexa
 
     
-    def changeValues(self, cx, cy, Menr, i, j):
+    def changeValues(self, cx, cy, r, i, j):
         self.x=cx
         self.y=cy
         self.radi=r
@@ -120,7 +120,7 @@ class Timer:
         text(self.getTime(), SIZEW - CELLSX * 1.2 , CELLSY * 2.5)
     
     def getTime(self):
-        return int(time.time() - self.startTime))
+        return int(time.time() - self.startTime)
         
     
                                 
